@@ -98,10 +98,32 @@ input, select{
 }
 .is-valid {
   color: #198754;
+  background-color: white;
+  animation: valid 2s 1;
+  transition: 1s;
 }
+
+@keyframes valid {
+  0% {background-color: #198754;}
+  50% {background-color: white;}
+  100% {background-color:#198754;}
+}
+
+
 
 .is-invalid {
   color: #842029;
+  background-color: white;
+  animation: invalid 2s 1;
+  transition: 1s;
+
+}
+
+
+@keyframes invalid {
+  0% {background-color:#842029;}
+  50% {background-color: white;}
+  100% {background-color:#842029;}
 }
 
 .alert-warning{
